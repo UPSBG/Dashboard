@@ -1,0 +1,20 @@
+{
+    "name": "upsbg/dashboard",
+    "description": "UPSBG Shipping Dashboard for Magento 2",
+    "require": {
+        "php": "^7.4 || ^8.1 || ^8.2 || ^8.3",
+        "magento/framework": ">=102.0.0 <105.0.0",
+        "magento/module-config": ">=100.0.0 <105.0.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.5",
+    "license": "proprietary",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "UPS\\Dashboard\\": ""
+        }
+    }
+}

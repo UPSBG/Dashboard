@@ -1,0 +1,56 @@
+<?php
+/** @var \UPSBG\Dashboard\Block\Adminhtml\System\Config\HiddenField $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+<div>
+    <?php //@codingStandardsIgnoreStart ?>
+    <input type="hidden" 
+           id="magento_url" 
+           name="magento_url" 
+           value="<?= $escaper->escapeHtmlAttr($block->getMagentoUrl()) ?>">
+    <input type="hidden" 
+           id="admin_url" 
+           name="admin_url" 
+           value="<?= $escaper->escapeHtmlAttr($block->getAdminUrl()) ?>">
+    <input type="hidden" 
+           id="magento_version" 
+           name="magento_version" 
+           value="<?= $escaper->escapeHtmlAttr($block->getMagentoVersion()) ?>">
+    <input type="hidden" 
+           id="module_name" 
+           name="module_name" 
+           value="<?= $escaper->escapeHtmlAttr($block->getModuleName()) ?>">
+    <input type="hidden" 
+           id="module_version" 
+           name="module_version" 
+           value="<?= $escaper->escapeHtmlAttr($block->getModuleVersion()) ?>">
+    <input type="hidden" 
+           id="token" 
+           name="token" 
+           value="<?= $escaper->escapeHtmlAttr($block->getToken()) ?>">
+    <input type="hidden" 
+           id="consumer_key" 
+           name="consumer_key" 
+           value="<?= $escaper->escapeHtmlAttr($block->getConsumerKey()) ?>">
+    <input type="hidden" 
+           id="consumer_secret" 
+           name="consumer_secret" 
+           value="<?= $escaper->escapeHtmlAttr($block->getConsumerSecret()) ?>">
+    <input type="hidden" 
+           id="upsapiurl" 
+           name="upsapiurl" 
+           value="<?= $escaper->escapeHtmlAttr($block->getUpsapiurl()) ?>">
+    <input type="hidden" 
+           id="ups_is_activate" 
+           value="<?= $escaper->escapeHtmlAttr($block->getIsActivate()) ?>">
+    <input type="hidden" 
+           id="integration_name" 
+           value="<?= $escaper->escapeHtmlAttr($block->getIntegrationName()) ?>">
+    <input type="hidden" 
+           id="store_id" 
+           value="<?= $escaper->escapeHtmlAttr($block->getStoreId()) ?>">
+    <input type="hidden" 
+           id="conn_status" 
+           value="<?= $escaper->escapeHtmlAttr($block->getConnStatus()) ?>">
+    <?php //@codingStandardsIgnoreEnd ?>
+</div>

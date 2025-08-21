@@ -1,0 +1,24 @@
+<?php
+/** @var \UPSBG\Dashboard\Block\Adminhtml\System\Config\Button $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+<?php //@codingStandardsIgnoreStart ?>
+<div class="actions actions-dashboard-action">
+    <button 
+        class="actions-dashboard-action action-default scalable primary ui-button ui-corner-all ui-widget" 
+        type="button" 
+        id="<?= $escaper->escapeHtml($block->getHtmlId()) ?>"
+    >
+        <span><?= $escaper->escapeHtml(__($block->getButtonLabel())) ?></span>
+    </button>
+</div>
+<script type="text/x-magento-init">
+    {
+        "#upsbg_dashboard_general_store_domain": {
+            "upsbg/activation": {
+                "ajaxUrl": "<?= $escaper->escapeUrl($block->getButtonUrl()) ?>"
+            }
+        }
+    }
+</script>
+<?php //@codingStandardsIgnoreEnd ?>

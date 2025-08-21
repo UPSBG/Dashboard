@@ -1,0 +1,22 @@
+<?php
+/** @var \UPSBG\Dashboard\Block\Adminhtml\System\Config\Button $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+<?php //@codingStandardsIgnoreStart ?>
+<input type="hidden" name="<?= $escaper->escapeHtmlAttr($block->getNamePrefix()) ?>" value="" />
+<ul class="checkboxes">
+    <?php foreach ($block->getValues() as $name => $label): ?>
+        <li>
+            <input type="checkbox" 
+                value="<?= $escaper->escapeHtmlAttr($name) ?>" 
+                name="<?= $escaper->escapeHtmlAttr($block->getNamePrefix()) ?>[]"
+                id="<?= $escaper->escapeHtmlAttr($block->getHtmlId()) . '_' . $escaper->escapeHtmlAttr($name) ?>"
+                    <?= $block->getIsChecked($name) ? ' checked="checked"' : '' ?>
+                    />
+            <label for="<?= $block->getHtmlId() . '_' . $escaper->escapeHtmlAttr($name) ?>">
+                <?= $escaper->escapeHtmlAttr($label) ?>
+            </label>
+        </li>
+    <?php endforeach;?>
+</ul>
+<?php //@codingStandardsIgnoreEnd ?>

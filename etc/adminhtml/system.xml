@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   UPS
+ * @package    UPS_Dashboard
+ * @subpackage System
+ * @link       https://www.ups.com
+ * @since      1.0.0
+ * @author UPS eCommerce Shipping Dashboard
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="upsdashboard" translate="label" sortOrder="110" class="upsdashboard-tab">
+            <label>Magento UPS</label>
+        </tab>
+        <section id="upsbg_dashboard" translate="label" type="text" sortOrder="8888" showInDefault="1" showInWebsite="1" showInStore="0">
+            <label>Start Here</label>
+            <tab>upsdashboard</tab>
+            <resource>UPSBG_Dashboard::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Let's start with the UPS® Shipping Dashboard</label>
+                <comment>UPS® Shipping Dashboard for Magento</comment>
+
+                <field id="store_domain" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Store URL:</label>
+                    <frontend_model>UPSBG\Dashboard\Block\Adminhtml\System\Config\Form\Field\StoreUrl</frontend_model>
+                    <validate>required-entry</validate>
+                </field>
+
+                <field id="site_email" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Professional email:</label>
+                    <validate>required-entry validate-email</validate>
+                </field>
+
+                <field id="checkbox" translate="label" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="0">
+                   <frontend_model>UPSBG\Dashboard\Block\Adminhtml\System\Config\Checkbox</frontend_model>
+                   <validate>required-entry</validate>
+                </field>
+
+                <field id="hiddenfield" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <frontend_model>UPSBG\Dashboard\Block\Adminhtml\System\Config\HiddenField</frontend_model>
+                </field>
+
+                <field id="activate" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label></label>
+                    <button_label>Accept</button_label>
+                    <button_url>upsbg/activate/index</button_url>
+                    <frontend_model>UPSBG\Dashboard\Block\Adminhtml\System\Config\Button</frontend_model>
+                </field>
+
+            </group>
+        </section>
+        
+    </system>
+</config>

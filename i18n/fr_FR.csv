@@ -1,0 +1,13 @@
+"Let's start with the UPS® Shipping Dashboard","Commençons par le tableau de bord des expéditions UPS®", module, UPSBG_Dashboard
+"UPS® Shipping Dashboard for Magento","Tableau de bord d'expédition UPS® pour Magento", module, UPSBG_Dashboard
+"Magento UPS","Magento UPS", module, UPSBG_Dashboard
+"Accept","Accepter", module, UPSBG_Dashboard
+"Start Here","Commencer ici", module, UPSBG_Dashboard
+"Store URL:","URL du magasin:", module, UPSBG_Dashboard
+"Professional email:","E-mail professionnel :", module, UPSBG_Dashboard
+"By checking you agree with <a href=""%1"" target=""_blank"">UPS Privacy Notice</a>.","En cochant, vous acceptez la <a href=""%1"" target=""_blank"">Déclaration de confidentialité UPS</a>.", module, UPSBG_Dashboard
+"By checking you agree with <a href=""%1"" target=""_blank"">UPS Terms and Conditions</a>.","En cochant, vous acceptez les <a href=""%1"" target=""_blank"">Conditions générales d'UPS</a>.", module, UPSBG_Dashboard
+"By checking you agree with <a href=""%1"" target=""_blank"">Itembase Merchant Terms</a>.","En cochant, vous acceptez les <a href=""%1"" target=""_blank"">Conditions de marchand Itembase</a>.", module, UPSBG_Dashboard
+"Deactive Connection","Désactiver la connexion", module, UPSBG_Dashboard
+"Connected Successfully","Connexion réussie", module, UPSBG_Dashboard
+"Do you want to remove connection?","Voulez-vous supprimer la connexion?", module, UPSBG_Dashboard

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   UPSBG
+ * @package    UPSBG_Dashboard
+ * @subpackage Webapi
+ * @link       https://www.ups.com
+ * @since      1.0.0
+ * @author UPSBG eCommerce Shipping Dashboard
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/upsbg/active" method="POST">
+        <service class="UPSBG\Dashboard\Api\ConfigInterface" method="saveConnectionId"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
