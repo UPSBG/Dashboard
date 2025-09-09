@@ -14,7 +14,7 @@
                     <?= $block->getIsChecked($name) ? ' checked="checked"' : '' ?>
                     />
             <label for="<?= $block->getHtmlId() . '_' . $escaper->escapeHtmlAttr($name) ?>">
-                <?= $escaper->escapeHtmlAttr($label) ?>
+                <?= /* @noEscape */ __($label)->render() ?>
             </label>
         </li>
     <?php endforeach;?>
